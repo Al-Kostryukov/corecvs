@@ -66,7 +66,9 @@ HEADERS += \
     buffers/rgb24/bresenhamRasterizer.h \
     buffers/fixeddisp/fixedPointRemapper.h \
     buffers/remapBuffer.h \
-    buffers/rgb24/bezierRasterizer.h
+    buffers/rgb24/bezierRasterizer.h \
+    buffers/converters/converters.h \
+    buffers/converters/converterFactory.h
 
 
 SOURCES += \
@@ -114,7 +116,9 @@ SOURCES += \
     buffers/rgb24/wuRasterizer.cpp \
     buffers/rgb24/bresenhamRasterizer.cpp \
     buffers/remapBuffer.cpp \
-    buffers/rgb24/bezierRasterizer.cpp
+    buffers/rgb24/bezierRasterizer.cpp \
+    $$PWD/converters/converterFactory.cpp \
+    $$PWD/converters/converters.cpp
 
 
 HEADERS += $$PWD/correspondenceList.h
